@@ -62,7 +62,7 @@ public class TestCase {
 	    System.out.println("Exception occurred: STOP");
 	}
 
-		try {
+	try {
 	    FrequencerInterface  myObject;
 	    int freq;
 	    System.out.println("checking s4.B183339.Frequencer");
@@ -72,6 +72,24 @@ public class TestCase {
 	    freq = myObject.frequency();
 	    System.out.print("\"nospace\" in \"Hi Ho Hi Ho\" appears "+freq+" times. ");
 	    if(0 == freq) { System.out.println("OK"); } else {System.out.println("WRONG"); }
+	}
+
+	catch(Exception e) {
+	    System.out.println("Exception occurred: STOP");
+	}
+
+	System.out.println("aiueo");
+
+	try {  //TestCase.java:for Frequencer
+	    FrequencerInterface  myObject;
+	    int freq;
+	    System.out.println("checking s4.B183339.Frequencer");
+	    myObject = new s4.B183339.Frequencer();
+	    myObject.setSpace("HHHHH".getBytes());
+	    myObject.setTarget("HH".getBytes());
+	    freq = myObject.frequency();
+	    System.out.print("\"HH\" in \"HHHHH\" appears "+freq+" times. ");
+	    if(4 == freq) { System.out.println("OK"); } else {System.out.println("WRONG"); }
 	}
 	
 	catch(Exception e) {
@@ -110,6 +128,7 @@ public class TestCase {
 
 	     
 	}
+      
 	catch(Exception e) {
 	    System.out.println("Exception occurred: STOP");
 	}
