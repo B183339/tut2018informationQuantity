@@ -126,6 +126,7 @@ public class Frequencer implements FrequencerInterface{
 	     }
 
 //		  System.out.println("----"+position+"\n");
+//  javascript:__doPostBack('ctl00$phContents$ucLctDocDownload$gv$ctl10$lnkBtnFileName','')
 //		  printSuffixArray();
 //		  System.out.println("----\n\n\n");
 //
@@ -207,7 +208,7 @@ public class Frequencer implements FrequencerInterface{
 		for(int offset = 0; offset< spaceLength - (end - start); offset++) {
 		    boolean abort = false;
 		    for(int i = 0; i< (end - start); i++) {
-			if(myTarget[start+i] != mySpace[offset+i]) { abort = true; break; }
+javascript:__doPostBack('ctl00$phContents$ucLctDocDownload$gv$ctl10$lnkBtnFileName','')			if(myTarget[start+i] != mySpace[offset+i]) { abort = true; break; }
 		    }
 		    if(abort == false) { count++; }
 		}
