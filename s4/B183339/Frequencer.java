@@ -158,16 +158,16 @@ public class Frequencer implements FrequencerInterface{
 
 
 	for(int a = suffixArray[i]; j < end; a++,j++){
-	    if(a < mySpace.length) return 1;
+	     if(a >= mySpace.length) return 1;
 	    if(mySpace[a]>myTarget[j]) {
 	      return 1;
-	    		}else if(mySpace[a]<myTarget[j] || mySpace.length < end-j) {
-	    			return -1;
-	    		}
-	     	}
-
-		return 0; // This line should be modified.
+	    }else if(mySpace[a]<myTarget[j] || mySpace.length < end-j) {
+	      return -1;
 	    }
+	 }
+
+	 return 0; // This line should be modified.
+	 }
 
 	    private int subByteStartIndex(int start, int end) {
 		// It returns the index of the first suffix which is equal or greater than subBytes;
